@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @curator_of_exhibition.name %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @curator_of_exhibition.about %>
+</p>
+
+<p>
+  <strong>Cover:</strong>
+  <%= @curator_of_exhibition.cover %>
+</p>
+
+<%= link_to 'Edit', edit_curator_of_exhibition_path(@curator_of_exhibition) %> |
+<%= link_to 'Back', curator_of_exhibitions_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Curator Of Exhibitions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>About</th>
+      <th>Cover</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @curator_of_exhibitions.each do |curator_of_exhibition| %>
+      <tr>
+        <td><%= curator_of_exhibition.name %></td>
+        <td><%= curator_of_exhibition.about %></td>
+        <td><%= curator_of_exhibition.cover %></td>
+        <td><%= link_to 'Show', curator_of_exhibition %></td>
+        <td><%= link_to 'Edit', edit_curator_of_exhibition_path(curator_of_exhibition) %></td>
+        <td><%= link_to 'Destroy', curator_of_exhibition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Curator Of Exhibition', new_curator_of_exhibition_path %>

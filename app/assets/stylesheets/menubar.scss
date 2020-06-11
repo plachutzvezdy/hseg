@@ -1,0 +1,41 @@
+.menubar {
+  background: white;
+  text-emphasis-color: black;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.04);
+  width: 100vw;
+  height: 65px;
+
+
+  * {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  a {
+    color: black;
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+
+    &:hover {
+      color: #737373;
+    }
+  }
+
+  .logo {
+    padding: 4px 555px 0 6px;
+  }
+
+  a + a {
+    margin-left: 75px;
+  }
+}

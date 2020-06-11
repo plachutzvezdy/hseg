@@ -1,0 +1,87 @@
+* {
+  margin-top: 600px;
+  margin-left: 71px;
+}
+
+  h1 {
+      font-family: ProximaNova;
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+  h2 {
+    font-family: ProximaNova;
+    font-weight: light;
+    font-size: 30px;
+  }
+
+  h3 {
+    font-family: ProximaNova;
+    font-weight: bold;
+    font-size: 60px;
+  }
+
+  h4 {
+    font-family: ProximaNova;
+    font-weight: light;
+    font-size: 20px;
+  }
+
+  p {
+    font-family: ProximaNova;
+    font-weight: regular;
+    font-size: 20px;
+  }
+
+  .firstimage {
+    width: 922px;
+    height: 589px;
+    margin-top: 154px;
+    float: right;
+    position: absolute;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    float: left;
+    width: 407px;
+    height: 600px;
+    margin-left: 71px;
+    margin-top: 600px;
+  }
+
+  .firstimage + .main {
+    flex-direction: row;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 320px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    flex-direction: column;
+    width: 407px;
+    height: 445px;
+  }
+
+  .card:nth-of-type(4) {
+    width: 742px;
+  }
+
+  .card::nth-of-type(5) {
+    width: 518px;
+  }
+
+  a {
+    margin-right: 38px;
+  }

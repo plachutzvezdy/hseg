@@ -1,0 +1,2 @@
+module CuratorOfExhibitionsHelper
+end
